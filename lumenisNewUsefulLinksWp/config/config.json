@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "lumenis-new-useful-links-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lumenisNewUsefulLinksWp/LumenisNewUsefulLinksWpWebPart.js",
+          "manifest": "./src/webparts/lumenisNewUsefulLinksWp/LumenisNewUsefulLinksWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LumenisNewUsefulLinksWpWebPartStrings": "lib/webparts/lumenisNewUsefulLinksWp/loc/{locale}.js"
+  }
+}

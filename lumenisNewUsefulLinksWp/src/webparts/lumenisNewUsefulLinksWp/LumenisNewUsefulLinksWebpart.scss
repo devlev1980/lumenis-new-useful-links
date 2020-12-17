@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$background: #e3e3e3;
+$white_color: #fff;
+$main_color: #09294a;
+$title_background: #f0f0f0;
+
+#workbenchPageContent {
+  max-width: 600px;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  color: $main_color;
+  background: $white_color;
+  max-width: 400px;
+  width: 100%;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  #usefulLinksWPTitle {
+    text-align: center;
+  }
+
+  .CanvasComponent.LCS .row::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .useful_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+
+    .item {
+      border-bottom: 1px solid rgba(212, 213, 218, 1);
+      border-right: 1px solid rgba(212, 213, 218, 1);
+      line-height: 2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 7px;
+      margin: 10px 0;
+
+      &:nth-child(10),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(11),
+      &:nth-child(12), {
+        border-bottom: 0;
+      }
+
+      &:nth-child(3),
+      &:nth-child(6),
+      &:nth-child(9),
+      &:nth-child(12) {
+        border-right: 0;
+      }
+    }
+    img {
+      display: block;
+    }
+  }
+
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
